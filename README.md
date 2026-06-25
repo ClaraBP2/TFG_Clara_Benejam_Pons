@@ -135,9 +135,9 @@ Ambos dispositivos se conectaron mediante una interfaz USB y se configuraron dir
 Se necesita tener los Abrir PowerShell como administrador y ejecutar:
 
 ```powershell
-New-NetIPAddress `
-    -InterfaceAlias "Ethernet 3" `
-    -IPAddress 192.168.55.100 `
+New-NetIPAddress 
+    -InterfaceAlias "Ethernet 3" 
+    -IPAddress 192.168.55.100 
     -PrefixLength 24
 ```
 
