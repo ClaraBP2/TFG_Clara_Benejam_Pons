@@ -2,7 +2,7 @@
 
 # Sistema inteligente distribuido basado en Edge Computing y Aprendizaje Federado para la monitorización del comportamiento animal
 
-Este proyecto implementa un sistema de **Aprendizaje Federado (Federated Learning)** utilizando **Flower** para el entrenamiento distribuido de modelos de clasificación del comportamiento animal. El sistema permite entrenar un modelo global a partir de datos distribuidos entre distintos clientes, incluyendo dispositivos **Edge** como la **NVIDIA Jetson Nano**, preservando la privacidad de los datos.
+Este proyecto implementa un sistema de **Aprendizaje Federado (Federated Learning)** utilizando **Flower** para el entrenamiento distribuido de modelos de clasificación del comportamiento animal. El sistema permite entrenar un modelo global a partir de datos distribuidos entre distintos clientes, incluyendo dispositivos **Edge** como la **NVIDIA Jetson Nano**.
 
 ---
 
@@ -12,8 +12,8 @@ Este proyecto implementa un sistema de **Aprendizaje Federado (Federated Learnin
 
 - Python 3.10
 - Windows o Linux
-- NVIDIA Jetson Nano (para las pruebas en Edge Computing)
-- Conexión USB o red local entre el servidor (ordenador personal) y el cliente (Jetson Nano). En este proyecto se describe la configuración mediante conexión USB.
+- NVIDIA Jetson Nano (para las pruebas de ejecución en el Edge)
+- Conexión USB o red local entre el servidor (ordenador personal) y el cliente (Jetson Nano). En este caso se describe la configuración mediante conexión USB.
 
 ## Instalación de dependencias
 
@@ -82,8 +82,8 @@ TFG_Clara_Benejam_Pons/
 │
 ├── federated_learning/
 │   └── run_flower.py
+│   └── client_flower.py
 │
-├── client_flower.py
 ├── requirements.txt
 └── README.md
 ```
@@ -132,7 +132,7 @@ Ambos dispositivos se conectaron mediante una interfaz USB y se configuraron dir
 
 ## Configuración de la dirección IP en Windows
 
-Abrir PowerShell como administrador y ejecutar:
+Se necesita tener los Abrir PowerShell como administrador y ejecutar:
 
 ```powershell
 New-NetIPAddress `
