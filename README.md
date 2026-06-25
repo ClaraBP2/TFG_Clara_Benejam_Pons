@@ -141,7 +141,8 @@ New-NetIPAddress
     -PrefixLength 24
 ```
 
-> **Nota:** El nombre de la interfaz (`Ethernet 3`) puede variar según la configuración del ordenador.
+> **Nota:** El nombre de la interfaz (`Ethernet 3`) puede variar según la configuración del ordenador. Tras conectar la Jetson Nano mediante el cable USB, diríjase al apartado **Red e Internet** de Windows y compruebe cuál es la interfaz de red que se ha habilitado. Sustituya `Ethernet 3` por el nombre correspondiente en el comando anterior. Acostumbra a ser Etehrnet 3 o 6. 
+
 
 ## Configuración temporal del Firewall
 
@@ -161,13 +162,7 @@ Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
 
 ## Verificación de la conectividad
 
-Antes de iniciar el entrenamiento federado se recomienda comprobar la conectividad entre ambos dispositivos:
-
-```bash
-ping 192.168.55.1
-```
-
-Si la configuración es correcta, la Jetson Nano responderá a las solicitudes ICMP.
+Para verificar la conectividad entre ambos dispositivos, ejecute ping 192.168.55.1 desde el ordenador o ping 192.168.55.100 desde la Jetson Nano.
 
 ---
 
