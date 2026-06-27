@@ -73,16 +73,25 @@ Para garantizar la reproducibilidad de los experimentos, se recomienda utilizar 
 ```text
 TFG_Clara_Benejam_Pons/
 │
-├── data/
-│   ├── raw/
-│   └── clean/
-│
 ├── data_processing/
-│   └── clean_data.py
+│   ├── clean_data.py         
+│   └── dataset_analysis.py  
 │
 ├── federated_learning/
-│   └── run_flower.py
-│   └── client_flower.py
+│   ├── run_flower.py
+│   ├── client_flower.py
+│   ├── server_flower.py
+│   ├── fine_tuning_flower.py
+│   ├── data_loader.py
+│   ├── evaluation.py
+│   └── utils.py
+│
+├── model/
+│   ├── classification_model.py
+│   └── __init__.py
+│
+├── baselines/
+│   └── centralizado.py
 │
 ├── requirements.txt
 └── README.md
