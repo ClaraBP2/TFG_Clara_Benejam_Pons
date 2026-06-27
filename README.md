@@ -222,6 +222,8 @@ python3 client_flower.py \
 7. Ejecutar el cliente en la Jetson Nano.
 8. Supervisar el entrenamiento desde la consola del servidor.
 
+En caso de entrenar el modelo, se recomienda desactivar el modo de suspensión del ordenador para evitar que el proceso de entrenamiento se interrumpa.
+
 ---
 
 # Hardware utilizado
