@@ -131,7 +131,7 @@ data/clean/
 
 manteniendo la organización original de los distintos rebaños.
 
-ATENCIÓN: dado que no es posible cargar los datos en esta carpeta, deben descaragrse del siguiente enlace: https://www.kaggle.com/datasets/ianharris/wa-sheep-behaviour-accelerometer-data
+ATENCIÓN: dado que no es posible cargar los datos en esta carpeta, deben descargarse del siguiente enlace: https://www.kaggle.com/datasets/ianharris/wa-sheep-behaviour-accelerometer-data
 
 ---
 
