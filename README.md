@@ -208,8 +208,7 @@ Este script:
 - Coordina las rondas de entrenamiento federado.
 
 ## 3. Iniciar el cliente remoto en la Jetson Nano
-
-Desde la Jetson Nano ejecutar:
+En la Jetson dejar solamente la carpeta con los datos del rebaño que se va a usar y los archivos de la capeta ```federated_learning_Jetson```. Ejecutar:
 
 ```bash
 python3 client_flower.py \
