@@ -167,6 +167,21 @@ def plot_all_confusion_matrices(
         y_test = data["y_test"]
 
         y_pred_fed = _get_predictions(global_model, X_test)
+        y_pred_fed = _get_predictions(global_model, X_test)
+
+        pred_df = pd.DataFrame({
+            "client_id": [client_id] * len(y_pred_fed),
+            "y_real": y_test,
+            "y_pred": y_pred_fed
+        })
+
+        os.makedirs("results/flower", exist_ok=True)
+
+        pred_df.to_csv(
+            f"results/flower/predicciones_{client_id}.csv",
+            index=False
+        )
+    
         cm_fed = confusion_matrix(y_test, y_pred_fed, labels=list(range(NUM_CLASSES)))
         acc_fed = accuracy_score(y_test, y_pred_fed)
         f1_fed = f1_score(y_test, y_pred_fed, average="macro")
