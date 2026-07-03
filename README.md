@@ -86,6 +86,14 @@ TFG_Clara_Benejam_Pons/
 │   ├── evaluation.py
 │   └── utils.py
 │
+│── federated_learning_Jetson/
+│   ├── clasification_model.py
+│   ├── client_flower.py
+│   ├── data_loader.py
+│   ├── evaluation.py
+│   ├── fine_tuning_flower.py
+│   ├── modelo_individual.py
+│
 ├── model/
 │   ├── classification_model.py
 │   └── __init__.py
