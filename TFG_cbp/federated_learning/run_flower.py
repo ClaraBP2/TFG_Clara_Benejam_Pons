@@ -247,6 +247,17 @@ if __name__ == "__main__":
 
         y_pred = np.argmax(global_model.predict(X_test, verbose=0), axis=1)
 
+         pred_df = pd.DataFrame({
+            "client_id": client_id,
+            "y_real": y_test,
+            "y_pred": y_pred
+        })
+
+        pred_df.to_csv(
+            f"results/flower/predicciones_{client_id}.csv",
+            index=False
+        )
+
         fed_results.append({
             "client_id": client_id,
             "fed_accuracy": accuracy_score(y_test, y_pred),
