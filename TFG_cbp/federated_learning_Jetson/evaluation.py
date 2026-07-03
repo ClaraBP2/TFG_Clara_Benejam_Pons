@@ -167,8 +167,6 @@ def plot_all_confusion_matrices(
         y_test = data["y_test"]
 
         y_pred_fed = _get_predictions(global_model, X_test)
-        y_pred_fed = _get_predictions(global_model, X_test)
-
         pred_df = pd.DataFrame({
             "client_id": [client_id] * len(y_pred_fed),
             "y_real": y_test,
